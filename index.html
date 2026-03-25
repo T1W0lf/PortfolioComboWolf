@@ -15,8 +15,8 @@
       --text: #e0e0e0;
       --muted: #888;
       --accent-anime: #ff6b9d;
-      --accent-real: #4fc3f7;
-      --accent-funky: #c6ff00;
+      --accent-minimalistic: #4fc3f7;
+      --accent-cartoony: #c6ff00;
       --white: #fff;
     }
 
@@ -100,7 +100,7 @@
     .tab:hover { color: var(--white); border-color: rgba(255,255,255,0.2); }
     .tab.active[data-cat="anime"]     { color: var(--accent-anime);  border-color: var(--accent-anime);  background: rgba(255,107,157,0.08); }
     .tab.active[data-cat="cartoony"] { color: var(--accent-real);   border-color: var(--accent-real);   background: rgba(79,195,247,0.08); }
-    .tab.active[data-cat="Minimalistic"]     { color: var(--accent-funky);  border-color: var(--accent-funky);  background: rgba(198,255,0,0.08); }
+    .tab.active[data-cat="minimalistic"]     { color: var(--accent-funky);  border-color: var(--accent-funky);  background: rgba(198,255,0,0.08); }
     .tab.active[data-cat="all"]       { color: var(--white); border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.06); }
 
     .grid {
@@ -120,8 +120,8 @@
     }
     .card:hover { transform: translateY(-4px); }
     .card[data-cat="anime"]:hover     { border-color: var(--accent-anime);  box-shadow: 0 8px 32px rgba(255,107,157,0.15); }
-    .card[data-cat="minimalistic"]:hover { border-color: var(--accent-real);   box-shadow: 0 8px 32px rgba(79,195,247,0.15); }
-    .card[data-cat="cartoony"]:hover     { border-color: var(--accent-funky);  box-shadow: 0 8px 32px rgba(198,255,0,0.15); }
+    .card[data-cat="minimalistic"]:hover { border-color: var(--accent-minimalistic);   box-shadow: 0 8px 32px rgba(79,195,247,0.15); }
+    .card[data-cat="cartoony"]:hover     { border-color: var(--accent-cartoony);  box-shadow: 0 8px 32px rgba(198,255,0,0.15); }
 
     .card-thumb {
       width: 100%; aspect-ratio: 16/10;
@@ -136,8 +136,8 @@
       margin-bottom: 4px;
     }
     .card[data-cat="anime"]     .card-label { color: var(--accent-anime); }
-    .card[data-cat="minimalistic"] .card-label { color: var(--accent-real); }
-    .card[data-cat="cartoony"]     .card-label { color: var(--accent-funky); }
+    .card[data-cat="minimalistic"] .card-label { color: var(--accent-minimalistic); }
+    .card[data-cat="cartoony"]     .card-label { color: var(--accent-cartoony); }
 
     .card-title { font-size: 14px; font-weight: 700; color: var(--white); }
 
